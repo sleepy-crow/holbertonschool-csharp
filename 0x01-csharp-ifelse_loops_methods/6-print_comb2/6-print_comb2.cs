@@ -6,7 +6,7 @@ namespace _6_print_comb2
     {
         static void Main(string[] args)
         {
-            int i = 0, j = 0;
+            int i = 0, j = 1;
             for (; i <= 9; j++)
             {
                 if (j > 9)

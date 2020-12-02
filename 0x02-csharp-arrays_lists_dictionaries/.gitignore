@@ -1,0 +1,4 @@
+dotnet.sh
+*main.cs
+*/bin/
+*/obj/

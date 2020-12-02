@@ -9,7 +9,7 @@ class Dictionary
         if (myList.Count == 0)
             return ("None");
 
-        int max = 0;
+        int max = -2;
         string name = "";
         foreach (string element in myList.Keys)
         {

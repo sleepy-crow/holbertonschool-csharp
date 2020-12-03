@@ -2,27 +2,27 @@
 using System.Collections.Generic;
 
 
-    class List
+class List
+{
+    public static int Sum(List<int> myList)
     {
-        public static int Sum(List<int> myList)
+        int neo = 0, x = 0, y = 0;
+        foreach (int e in myList)
         {
-            int neo =  0, x = 0, y = 0;
-            foreach (int e in myList)
+            y += 1;
+            if (y > 1)
             {
-                y += 1;
-                if (y > 1)
-                {
-                    if (e == x)
-                        continue;
-                    else
-                        neo += e;
-                }
+                if (e == x)
+                    continue;
                 else
-                {
                     neo += e;
-                }
-                x = e;
             }
-            return neo;
+            else
+            {
+                neo += e;
+            }
+            x = e;
         }
+        return neo;
     }
+}

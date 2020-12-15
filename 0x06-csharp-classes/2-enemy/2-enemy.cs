@@ -21,11 +21,5 @@ namespace Enemies
             }
             health = value;
         }
-
-        ///<summary>This is a public method that returns the current health of the enemy.</summary>
-        public int GetHealth()
-        {
-            return this.health;
-        }
     }
 }

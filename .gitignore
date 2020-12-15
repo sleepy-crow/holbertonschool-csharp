@@ -1,3 +1,5 @@
 dotnet.sh
-*/bin/
-*/obj/
+*main.cs
+*lsbin/
+*obj/
+*bin/

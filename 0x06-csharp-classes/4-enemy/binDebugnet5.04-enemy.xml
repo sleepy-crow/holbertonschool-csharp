@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>4-enemy</name>
+    </assembly>
+    <members>
+        <member name="T:Enemies.Zombie">
+            <summary>This class represents a zombie enemy. </summary>
+        </member>
+        <member name="F:Enemies.Zombie.health">
+            <values>This is the value that represents the hit points of the enemy. </values>
+        </member>
+        <member name="F:Enemies.Zombie.name">
+            <values>This is the name of the zombie.</values>
+        </member>
+        <member name="P:Enemies.Zombie.Name">
+            <values>This a public property, called name.</values>
+        </member>
+        <member name="M:Enemies.Zombie.#ctor">
+            <summary>This is the constructor of the class. </summary>
+        </member>
+        <member name="M:Enemies.Zombie.#ctor(System.Int32)">
+            <summary>
+            This is another constructor for the class, it verifies that the health is >= 0.
+            </summary>
+        </member>
+        <member name="M:Enemies.Zombie.GetHealth">
+            <summary>This is a public method that returns the current health of the enemy.</summary>
+        </member>
+    </members>
+</doc>

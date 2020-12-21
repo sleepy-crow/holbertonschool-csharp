@@ -50,6 +50,9 @@ class Rectangle : Shape
     {
         return (height * width);
     }
+    /// <summary>
+    /// This method overrides the .ToString method.
+    /// </summary>
     public override string ToString()
     {
          return ($"[Rectangle] {width} / {height}");

@@ -1,12 +1,12 @@
 ﻿using System;
 
     /// <summary>
-    /// 
+    /// the class name
     /// </summary>
     class VectorMath
     {
         /// <summary>
-        /// 
+        /// method that multiplies a vector and a scalar and returns the resulting vector.
         /// </summary>
         public static double[] Multiply(double[] vector, double scalar)
         {
@@ -24,8 +24,8 @@
                 len = 3;
 
             double[] mew = new double[len];
-            for (int i = 0; i < vector1.Length; i++)
-                mew[i] = (vector1[i] + vector2[i]);
+            for (int i = 0; i < vector.Length; i++)
+                mew[i] = (vector[i] * scalar);
             return mew;
         }
     }

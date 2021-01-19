@@ -13,11 +13,8 @@ class VectorMath
 		double[] oh_no = new double[2];
 		if (vector1.Length != vector2.Length || vector1.Length < 2 || vector1.Length > 3
 		|| vector2.Length < 2 || vector2.Length > 3)
-		{
-			for (int i = 0; i < 2; i++)
-				oh_no[i] = -1;
-			return oh_no;
-		}
+            return -1;
+
 		int len;
 		if (vector1.Length == 2)
 			len = 2;

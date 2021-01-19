@@ -15,20 +15,9 @@ class VectorMath
 		|| vector2.Length < 2 || vector2.Length > 3)
             return -1;
 
-		int len;
-		if (vector1.Length == 2)
-			len = 2;
-		else
-			len = 3;
-
-		double[] good = new double[len];
+        double dot = 0;
 		for (int i = 0; i < vector1.Length; i++)
-			good[i] = (vector1[i] + vector2[i]);
-
-		int dot = 0;
-		for (int i = 0; i < good.Length; i++)
-			dot += good[i];
-
+			dot += vector1[i] + vector2[i];
 		return dot;
 	}
 }

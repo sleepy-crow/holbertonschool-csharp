@@ -10,7 +10,7 @@ class MatrixMath
 	/// </summary>
 	public static double[,] MultiplyScalar(double[,] matrix, double scalar)
 	{
-		double[,] oh_no = { { -1, -1 }, { -1, -1 } };
+		double[,] oh_no = { {-1} };
 		if (
 			(matrix1.GetLength(0) != matrix1.GetLength(1)) ||
 			(matrix1.GetLength(0) > 3) || (matrix1.GetLength(1) > 3) ||

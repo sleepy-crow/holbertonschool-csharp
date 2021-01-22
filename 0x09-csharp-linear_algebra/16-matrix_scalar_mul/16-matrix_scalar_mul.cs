@@ -12,9 +12,9 @@ class MatrixMath
 	{
 		double[,] oh_no = { {-1} };
 		if (
-			(matrix1.GetLength(0) != matrix1.GetLength(1)) ||
-			(matrix1.GetLength(0) > 3) || (matrix1.GetLength(1) > 3) ||
-			(matrix1.GetLength(0) < 2) || (matrix1.GetLength(1) < 2)
+			(matrix.GetLength(0) != matrix.GetLength(1)) ||
+			(matrix.GetLength(0) > 3) || (matrix.GetLength(1) > 3) ||
+			(matrix.GetLength(0) < 2) || (matrix.GetLength(1) < 2)
 			)
 		{
 			return oh_no;
@@ -26,7 +26,7 @@ class MatrixMath
 		{
 			for (int j = 0; j < len; j++)
 			{
-				mew[i, j] = matrix1[i, j] * scalar;
+				mew[i, j] = matrix[i, j] * scalar;
 			}
 		}
 		return mew;

@@ -19,7 +19,7 @@ class MatrixMath
         int len_rows = matrix1.GetLength(0);
         int len_cols = matrix2.GetLength(1);
         double[,] mew = new double[len_rows, len_cols];
-        int mul = 0;
+        double mul = 0;
         for (int i = 0; i < len_rows; i++)
 		{
 			for (int j = 0; j < len_cols; j++)
@@ -31,6 +31,6 @@ class MatrixMath
                 mew[i, j] = mul;
 			}
 		}
-        return mul;
+        return mew;
 	}
 }

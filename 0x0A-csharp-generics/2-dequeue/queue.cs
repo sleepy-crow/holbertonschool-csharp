@@ -17,7 +17,7 @@ public class Queue<T>
         ///<summary>This is the value to store in the node.</summary>
         public T value = default(T);
         ///<summary>This is the next node.</summary>
-        public Node Next = null;
+        public Node next = null;
 
         ///<summary>This method gives a value to the value variable.</summary>
         public Node(T var)
@@ -38,15 +38,16 @@ public class Queue<T>
                 Console.WriteLine("Queue is empty");
                 return default(T);
             }
-        Node tmp = head;
+        Node temp = head;
         head = head.next;
         count -= 1;
-        return tmp.value;
+        return temp.value;
     }
 
-    
+
     ///<summary>This method returns the Queue's type.</summary>
     public Type CheckType() => typeof(T);
+
 
     ///<summary>This method adds an element to the end of the Queue.</summary>
     public void Enqueue(T value)
@@ -59,13 +60,10 @@ public class Queue<T>
         }
         else
         {
-            tail.Next = newNode;
+            tail.next = newNode;
             tail = newNode;
         }
 
         count += 1;
     }
-
-    ///<summary>This method returns the number of elements in the Queue.</summary>
-    public int Count() => count;
 }

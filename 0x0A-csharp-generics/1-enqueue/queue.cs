@@ -3,11 +3,29 @@
 ///<summary>This is the Queue Class.</summary>
 public class Queue<T>
 {
+    //=======================================================================
+    //= Variables ===========================================================
+    //=======================================================================
+
+    // - Public -------------------------------------------------------------
+
+    ///<summary>Head of the Queue.</summary>
     public Node head = null;
+    ///<summary>Tail of the Queue.</summary>
     public Node tail = null;
+    ///<summary>Counter of the nodes in Queue.</summary>
     public int count;
+
+    // - Private ------------------------------------------------------------
+
+
+    //=======================================================================
+    //= Classes =============================================================
+    //=======================================================================
+
+    // - Public -------------------------------------------------------------
     ///<summary>This is a class to add nodes to the Queue.</summary>
-	public class Node
+    public class Node
     {
         ///<summary>This is the value to store in the node.</summary>
         public T value = default(T);
@@ -20,6 +38,16 @@ public class Queue<T>
             value = var;
         }
     }
+
+    // - Private ------------------------------------------------------------
+
+
+    //=======================================================================
+    //= Methods =============================================================
+    //=======================================================================
+
+    // - Public -------------------------------------------------------------
+    
     ///<summary>This method returns the Queue's type.</summary>
     public Type CheckType() => typeof(T);
 

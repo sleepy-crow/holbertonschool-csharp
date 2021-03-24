@@ -8,7 +8,7 @@ public abstract class Base
 	/// <summary>
 	///  the name the class will recive
 	/// </summary>
-	private string name { get; set; }
+	public string name { get; set; }
 	/// <summary>
 	/// Making the method .ToString() return the property name of the class
 	/// and the type of class it is
@@ -51,7 +51,6 @@ public interface ICollectable
 /// </summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
-    public string name { get; set; }
     /// <summary>This is durability implemented int.</summary>
     public int durability{ get => throw new NotImplementedException() ; set => throw new NotImplementedException(); }
     /// <summary>This is isCollected implemented bool.</summary>

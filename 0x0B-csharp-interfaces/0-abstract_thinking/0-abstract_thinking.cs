@@ -5,6 +5,9 @@
 /// </summary>
 public abstract class Base
 {
+	/// <summary>
+	///  the name the class will recive
+	/// </summary>
 	public string name = null;
 	/// <summary>
 	/// Making the method .ToString() return the property name of the class

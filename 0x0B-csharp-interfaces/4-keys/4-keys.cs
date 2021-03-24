@@ -151,36 +151,37 @@ public class Decoration : Base, IInteractive, IBreakable
 }
 
 /// <summary>
-/// These are keys
+/// class Key
 /// </summary>
 public class Key : Base, ICollectable
 {
     /// <summary>
-    /// This is a collector
+    /// Property isCollected
     /// </summary>
-    public bool isCollected{get; set;}
+    public bool isCollected { get; set; }
+
     /// <summary>
-    /// This is Interact.
+    /// Constructor.
     /// </summary>
-    public Key(string name = "key", bool isCollected = false)
+    public Key(string name = "Key", bool isCollected = false)
     {
         this.name = name;
         this.isCollected = isCollected;
     }
 
     /// <summary>
-    /// Here is the collection
+    /// Method Collect
     /// </summary>
     public void Collect()
     {
-        if (!isCollected)
+        if (isCollected == false)
         {
             isCollected = true;
-            Console.WriteLine($"You pick up the {name}.");
+            Console.WriteLine($"You pick up the {this.name}.");
         }
-        else if (isCollected)
+        else if (isCollected == true)
         {
-            Console.WriteLine($"You have already picked up the {name}.");
+            Console.WriteLine($"You have already picked up the {this.name}.");
         }
     }
 }

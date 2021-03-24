@@ -24,79 +24,52 @@ public abstract class Base
 /// </summary>
 public interface IInteractive
 {
-    /// <summary>
-    /// Method Interact.
-    /// </summary>
+    /// <summary>This is Interact.</summary>
     void Interact();
 }
 
-/// <summary>
-/// This interface determines if an object is breakable.
-/// </summary>
+/// <summary>This is Interact.</summary>
 public interface IBreakable
 {
-    /// <summary>
-    /// Property durability.
-    /// </summary>
-    int durability {get; set; }
-    /// <summary>
-    /// Method Break.
-    /// </summary>
+    /// <summary>This is Interact.</summary>
+    int durability{ get; set; }
+    /// <summary>This is Interact.</summary>
     void Break();
 }
 
-/// <summary>
-/// This interface determines if an object is collectable.
-/// </summary>
+/// <summary>This is Interact.</summary>
 public interface ICollectable
 {
-    /// <summary>
-    /// Property isCollected.
-    /// </summary>
-    bool isCollected { get; set; }
-    /// <summary>
-    /// Method Collect.
-    /// </summary>
+    /// <summary>This is Interact.</summary>
+    bool isCollected{ get; set; }
+    /// <summary>This is Interact.</summary>
     void Collect();
 }
 
 /// <summary>
-/// A test class
+/// This is Queue.
 /// </summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
-
-    /// <summary>
-    /// durability property
-    /// </summary>
-    public int durability { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-    /// <summary>
-    /// Colecting property
-    /// </summary>
-    public bool isCollected { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-    /// <summary>
-    /// This method allows interaction
-    /// </summary>
+    /// <summary>This is durability implemented int.</summary>
+    public int durability{ get => throw new NotImplementedException() ; set => throw new NotImplementedException(); }
+    /// <summary>This is isCollected implemented bool.</summary>
+    public bool isCollected{ get => throw new NotImplementedException() ; set => throw new NotImplementedException(); }
+    /// <summary>This is Interact.</summary>
     public void Interact()
     {
         throw new NotImplementedException();
     }
 
-    /// <summary>
-    /// This method breaks
-    /// </summary>
+    /// <summary>This is break.</summary>
     public void Break()
     {
         throw new NotImplementedException();
     }
 
-    /// <summary>
-    /// This method make you collect
-    /// </summary>
+    /// <summary>This is Collect.</summary>
     public void Collect()
     {
         throw new NotImplementedException();
     }
 }
-

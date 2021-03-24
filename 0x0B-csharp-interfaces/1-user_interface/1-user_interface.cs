@@ -51,6 +51,7 @@ public interface ICollectable
 /// </summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
+    public string name { get; set; }
     /// <summary>This is durability implemented int.</summary>
     public int durability{ get => throw new NotImplementedException() ; set => throw new NotImplementedException(); }
     /// <summary>This is isCollected implemented bool.</summary>
@@ -72,5 +73,5 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
     {
         throw new NotImplementedException();
     }
-    public string name { get; set; }
+    
 }

@@ -8,7 +8,7 @@ public abstract class Base
 	/// <summary>
 	///  the name the class will recive
 	/// </summary>
-	public string name { get; set; }
+	private string name { get; set; }
 	/// <summary>
 	/// Making the method .ToString() return the property name of the class
 	/// and the type of class it is
@@ -72,4 +72,5 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
     {
         throw new NotImplementedException();
     }
+    public string name { get; set; }
 }

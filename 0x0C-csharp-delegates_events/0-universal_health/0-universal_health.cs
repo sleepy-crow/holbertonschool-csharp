@@ -1,10 +1,18 @@
 ﻿using System;
 
+/// <summary>
+/// Class of the player
+/// </summary>
 public class Player
 {
     public string name;
     public float maxHp;
     public float hp;
+    /// <summary>
+    /// constructor of the player
+    /// </summary>
+    /// <param name="name"> name of the play er</param>
+    /// <param name="maxHp"> maximum of health the player is going to have </param>
 	public Player(string name = "Player", float maxHp = 100f)
 	{
         this.name = name;
@@ -21,6 +29,9 @@ public class Player
         }
         
 	}
+    /// <summary>
+    /// Method tha prints how much health the player has
+    /// </summary>
     public void PrintHealth()
     {
         Console.WriteLine(this.name + " has " + this.hp + "/" + this.maxHp);

@@ -94,7 +94,7 @@ public class Player
     {
         if (newHp <= 0f)
         {
-            hp = 0f;
+            this.hp = 0f;
         }
         else
         {

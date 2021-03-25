@@ -92,7 +92,7 @@ public class Player
     /// <param name="newHp"> the new hp to check and set </param>
     public void ValidateHP(float newHp)
     {
-        if (newHp <= 0f)
+        if (newHp < 0f)
         {
             this.hp = 0f;
         }

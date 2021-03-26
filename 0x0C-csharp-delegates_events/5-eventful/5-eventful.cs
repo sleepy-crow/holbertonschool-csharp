@@ -99,6 +99,10 @@ public class Player
         {
             this.hp = 0f;
         }
+        else if (newHp > maxHp)
+        {
+            this.hp = this.maxHp;
+        }
         else
         {
             this.hp = newHp;
@@ -154,19 +158,19 @@ public class Player
     /// this method tells you when the health is low
     /// </summary>
     /// <param name="e"> the health player has </param>
-    /// <paragram name="sender"> this is the sender </paragram>
+    /// <param name="sender"> this is the sender </param>
     private void HPValueWarning(object sender, CurrentHPArgs e)
     {
-        if (e.currentHp > 0f && e.currentHp <= (maxHp / 4f))
-        {
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("Health is low!");
-            Console.ResetColor();
-        }
         if (e.currentHp == 0f)
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Health has reached zero!");
+            Console.ResetColor();
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("Health is low!");
             Console.ResetColor();
         }
     }

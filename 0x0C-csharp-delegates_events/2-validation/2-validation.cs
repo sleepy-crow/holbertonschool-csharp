@@ -80,6 +80,12 @@ public class Player
             thp = this.hp + heal;
             ValidateHP(thp);
         }
+        else if (heal > maxHp)
+        {
+            Console.WriteLine(this.name + " heals " + heal + " HP!");
+            thp = maxHp;
+            ValidateHP(thp);
+        }
         else
         {
             Console.WriteLine(this.name + " heals 0 HP!");

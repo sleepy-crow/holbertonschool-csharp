@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using InventoryLibrary;
+
+//using InventoryLibrary;
 
 namespace InventoryManager
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.White;
@@ -33,10 +37,13 @@ namespace InventoryManager
                 "exit"
             };
 
-            string prompt = "$ ";
+            //Prompt Configuration
+            string prompt = "(n _n)> ";
 
+            //User input parser
             string[] userSplit;
 
+            //Console App
             while (true)
             {
                 //Display Command list (with Colors!)
@@ -55,15 +62,11 @@ namespace InventoryManager
                 Console.WriteLine("<Exit>");
                 //End of Command List Display
 
-                //Choose random string and color for prompt
-                int randomConsole = randomNumber.Next(0, promptList.Length);
-                prompt = promptList[randomConsole];
-                Console.ForegroundColor = colorlist[prompt];
+                //Print The prompt
                 Console.Write(prompt);
 
                 //Split and turn to lowercase user input
                 userSplit = Console.ReadLine().Split(' ');
-
 
                 switch (userSplit[0].ToLower())
                 {

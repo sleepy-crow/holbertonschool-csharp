@@ -12,7 +12,7 @@ namespace InventoryLibrary
     {
         public string name { get; set; }
 
-        public User(string name = "Default_User_Name")
+        public User(string name = "John Doe / Jane Doe")
         {
             this.name = name;
         }

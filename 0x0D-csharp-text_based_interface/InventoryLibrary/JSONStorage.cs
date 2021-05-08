@@ -13,9 +13,9 @@ namespace InventoryLibrary
     {
         public Dictionary<string, object> objects = new Dictionary<string, object>();
 
-        string filePath = @"./Storage/inventory_manager.json";
+        string filePath = @"./storage/inventory_manager.json";
 
-        public void All()
+        public Dictionary<string, object> All()
         {
             return (this.objects);
         }
